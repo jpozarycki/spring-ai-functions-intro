@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class QuestionController {
     private final QuestionService questionService;
 
-    @PostMapping("/ask")
+    @PostMapping("/weather")
     public Answer askQuestion(@RequestBody Question question) {
         return questionService.getAnswer(question);
-    }
+    } 
 }
